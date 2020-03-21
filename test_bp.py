@@ -4,5 +4,5 @@ import blood_pressure_monitor as bpm
 
 
 def test_getbp():
-    data = json.load(bpm.getBP())
+    data = bpm.getBP()
     assert data['name'] == 'bp' and data['values']
